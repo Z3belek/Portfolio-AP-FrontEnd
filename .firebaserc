@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "portfolio-ap-4aab2": {
+      "hosting": {
+        "Portfolio-AP-FrontEnd": [
+          "portfolio-ap-4aab2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "portfolio-ap-4aab2"
+  }
+}
