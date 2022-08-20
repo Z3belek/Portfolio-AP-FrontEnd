@@ -14,6 +14,7 @@ import { LoginComponent } from './navbar/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { ConfirmComponent } from './components/confirm/confirm.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { AboutDialogComponent } from './components/aboutme/about-dialog/about-dialog.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
     LoginComponent,
     HomeComponent,
     ConfirmComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    AboutDialogComponent
   ],
   imports: [
     BrowserModule,
