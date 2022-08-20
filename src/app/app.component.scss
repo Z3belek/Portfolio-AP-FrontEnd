@@ -1,0 +1,22 @@
+.main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 0 150px
+}
+
+@media (max-width:768px) {
+  .main {
+    padding: 0 40px
+  }
+}
+
+.main__home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0;
+}

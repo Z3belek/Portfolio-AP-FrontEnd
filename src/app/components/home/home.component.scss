@@ -1,0 +1,61 @@
+.p__One h1 {
+  margin: 0 0 5px 4px;
+  color: var(--c-orange-400);
+  font-size: clamp(14px, 5vw, 16px);
+  font-weight: 400;
+  font-family: SFmono, "Roboto Mono", monospace;
+}
+
+.p__Two h2 {
+  margin: 0;
+  font-size: clamp(40px, 10vw, 80px);
+  white-space: nowrap;
+}
+
+.p__Three {
+  display: flex;
+  gap: .5rem;
+}
+
+.p__Three h3 {
+  line-height: .9;
+  font-size: clamp(20px, 8vw, 40px);
+}
+
+.p__Three .alt {
+  line-height: .9;
+}
+
+.p__Four p {
+  margin: 20px 0 0;
+  max-width: 540px
+}
+
+.p__Five a {
+  position: relative;
+  text-decoration: none;
+  color: var(--c-orange-400);
+  text-decoration-skip-ink: auto
+}
+
+.p__Five a {
+  background: 0 0;
+  border: 1px solid var(--c-orange-400);
+  border-radius: 10px;
+  padding: 1.25rem 1.75rem;
+  font-size: 14px;
+  font-family: SFmono, "Roboto Mono", monospace;
+  line-height: 1;
+  cursor: pointer;
+  margin-top: 50px;
+  display: inline-block
+}
+
+.p__Six {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  opacity: .2;
+}

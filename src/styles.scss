@@ -27,6 +27,13 @@ html {
   box-sizing: border-box;
 }
 
+:target:before {
+  content: "";
+  display: block;
+  height: 90px;
+  margin: -90px 0 0;
+}
+
 body {
   height: 400vh;
   font-family: calibre, Inter, sans-serif;
