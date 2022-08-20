@@ -1,1 +1,45 @@
-<p>aboutme works!</p>
+<div class="section__header">
+  <h2 class="header__title">About Me</h2>
+  <div class="header__addBtn">
+    <button mat-icon-button *ngIf="(afAuth.user | async)" (click)="openEditAboutme(aboutmes)">
+      <mat-icon>edit</mat-icon>
+    </button>
+  </div>
+</div>
+<div class="inner">
+  <div class="inner__col1">
+    <img src="../../../assets/img/selfie.jpg" class="col1__imgProfile" />
+  </div>
+  <div class="inner__col2">
+    <div class="col2__data">
+      <div class="data__about">
+        <div class="about__col">
+          <p>{{aboutmes.dtext}}</p>
+        </div>
+        <div class="about__col">
+          <div class="col__skill">
+            <div class="skill__info">
+              <h4>{{aboutmes.tpercentage1}}</h4>
+              <span>{{aboutmes.percentage1}}%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="{{aboutmes.percentage1}}"></mat-progress-bar>
+          </div>
+          <div class="col__skill">
+            <div class="skill__info">
+              <h4>{{aboutmes.tpercentage2}}</h4>
+              <span>{{aboutmes.percentage2}}%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="{{aboutmes.percentage2}}"></mat-progress-bar>
+          </div>
+          <div class="col__skill">
+            <div class="skill__info">
+              <h4>{{aboutmes.tpercentage3}}</h4>
+              <span>{{aboutmes.percentage3}}%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="{{aboutmes.percentage3}}"></mat-progress-bar>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

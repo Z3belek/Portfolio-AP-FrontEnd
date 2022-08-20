@@ -13,12 +13,13 @@ export class AboutmeService {
     return this.http.get<Aboutme[]>(this.url);
   }
 
-  editAboutme(id: number, aboutme: Aboutme): Observable<any> {
-    return this.http.put(this.url + '/' + id, aboutme);
+  editAboutme(aboutme: Aboutme): Observable<any> {
+    return this.http.put<Aboutme[]>(this.url, aboutme);
   }
 }
 
 export interface Aboutme {
+  id?: number,
   dtext: string,
   percentage1: number,
   percentage2: number,

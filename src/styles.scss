@@ -104,3 +104,50 @@ header .mat-button-wrapper {
     width: 90%;
   }
 }
+
+.section__header {
+  display: flex;
+}
+
+.section__header .header__title {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px 0 40px;
+  width: 100%;
+  font-size: clamp(26px, 5vw, 32px);
+  white-space: nowrap
+}
+
+.section__header .header__title::before {
+  position: relative;
+  bottom: 4px;
+  counter-increment: section 1;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: var(--c-orange-400);
+  font-family: SFmono, "Roboto Mono", monospace;
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: 400
+}
+
+.section__header .header__title::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #233554
+}
+
+.section__header .header__addBtn {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px 0 40px;
+}
+
+.section__header .header__addBtn .mat-icon-button {
+  background: #233554;
+}
