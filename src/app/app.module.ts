@@ -13,6 +13,7 @@ import { environment } from 'src/environments/environment';
 import { LoginComponent } from './navbar/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { ConfirmComponent } from './components/confirm/confirm.component';
+import { AboutmeComponent } from './components/aboutme/aboutme.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ConfirmComponent } from './components/confirm/confirm.component';
     NavbarComponent,
     LoginComponent,
     HomeComponent,
-    ConfirmComponent
+    ConfirmComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,

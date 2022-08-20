@@ -69,6 +69,13 @@ body {
   color: #ccd6f6
 }
 
+:target:before {
+  content: "";
+  display: block;
+  height: 90px;
+  margin: -90px 0 0;
+}
+
 a {
   text-decoration: none
 }
