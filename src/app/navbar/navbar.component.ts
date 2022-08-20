@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit {
   }
 
   loginB() {
-    this.dialog.open(LoginComponent,{
+    this.dialog.open(LoginComponent, {
       panelClass: "dialog-responsive"
     })
   }
