@@ -1,0 +1,45 @@
+<header>
+  <div class="nav">
+    <div class="nav__left">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon color="primary">account_circle</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="loginB()" *ngIf="!(afAuth.user | async)">
+          <mat-icon color="primary">login</mat-icon>
+          <span>Login</span>
+        </button>
+        <button mat-menu-item (click)="logout()" *ngIf="(afAuth.user | async)">
+          <mat-icon color="primary">logout</mat-icon>
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+    </div>
+    <div class="nav__right">
+      <a mat-button href="{{data.href}}" *ngFor="let data of navData">
+        <mat-icon color="primary">{{data.icon}}</mat-icon>
+        <span>{{data.label}}</span>
+      </a>
+      <a href="../../assets/cv_ingles.pdf" target="_blank" rel="noreferrer noopener" mat-stroked-button
+        color="primary">Resume</a>
+    </div>
+    <div class="nav__mobile">
+      <button class="mobile__btnClosed" [className]="isActive ? 'mobile__btnOpened' : 'mobile__btnClosed'"
+        (click)="isActive = !isActive">
+        <div class="mobile__box">
+          <div class="mobile__box__inner"></div>
+        </div>
+      </button>
+      <aside tabindex="-1" [className]="isActive ? 'mobile__menuOpened' : 'mobile__menuClosed'"
+        class="mobile__menuClosed">
+        <nav>
+          <a mat-button href="{{data.href}}" *ngFor="let data of navData">
+            <mat-icon color="primary">{{data.icon}}</mat-icon>
+            <span>{{data.label}}</span>
+          </a>
+          <a href="../../assets/cv_ingles.pdf" target="_blank" rel="noreferrer noopener" mat-stroked-button>Resume</a>
+        </nav>
+      </aside>
+    </div>
+  </div>
+</header>
