@@ -12,13 +12,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { environment } from 'src/environments/environment';
 import { LoginComponent } from './navbar/login/login.component';
 import { HomeComponent } from './components/home/home.component';
+import { ConfirmComponent } from './components/confirm/confirm.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    ConfirmComponent
   ],
   imports: [
     BrowserModule,
