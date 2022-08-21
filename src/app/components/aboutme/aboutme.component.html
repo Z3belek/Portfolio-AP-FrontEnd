@@ -1,7 +1,7 @@
 <div class="section__header">
   <h2 class="header__title">About Me</h2>
   <div class="header__addBtn">
-    <button mat-icon-button  (click)="openEditAboutme(aboutmes)">
+    <button mat-icon-button *ngIf="(afAuth.user | async)" (click)="openEditAboutme(aboutmes)">
       <mat-icon>edit</mat-icon>
     </button>
   </div>
