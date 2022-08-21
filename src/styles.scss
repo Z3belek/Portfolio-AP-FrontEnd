@@ -122,7 +122,6 @@ header .mat-button-wrapper {
 .section__header .header__title::before {
   position: relative;
   bottom: 4px;
-  counter-increment: section 1;
   content: "0" counter(section) ".";
   margin-right: 10px;
   color: var(--c-orange-400);
@@ -150,4 +149,12 @@ header .mat-button-wrapper {
 
 .section__header .header__addBtn .mat-icon-button {
   background: #233554;
+}
+
+.green-snackbar {
+  background: rgb(56, 142, 60);
+}
+
+.warn-snackbar {
+  background: rgb(211, 47, 47);
 }

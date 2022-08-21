@@ -1,1 +1,37 @@
-<p>experience works!</p>
+<div class="section__header">
+  <h2 class="header__title">Where I’ve Worked</h2>
+  <div class="header__addBtn">
+    <button mat-icon-button *ngIf="(afAuth.user | async)" (click)="openAddExp()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</div>
+<mat-tab-group class="inner">
+  <mat-tab label="{{experience.role}}" *ngFor="let experience of experiences">
+    <div class="inner__experience">
+      <div class="experience__col1">
+        <div class="col1__technologies">
+          <div class="technologies__item" *ngFor="let technology of experience.technologies">
+            <img src="../../../assets/technologies/{{technology}}.svg" height="40px" width="40px">
+            <span>{{technology}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="experience__col2">
+        <div class="col2__btn" *ngIf="(afAuth.user | async)">
+          <button mat-icon-button (click)="openEditExp(experience)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button (click)="openDeleteExp(experience.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+        <h3>{{experience.role}} in <span><a href="#" target="_blank">{{experience.place}}</a></span></h3>
+        <p>{{experience.year1 | date:'MMMM y'}} - {{experience.year2 | date:'MMMM y'}}</p>
+        <ul>
+          <li *ngFor="let responsibility of experience.responsibilities">{{responsibility}}</li>
+        </ul>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>
