@@ -1,1 +1,49 @@
-<p>project works!</p>
+<div class="section__header">
+  <h2 class="header__title">Some things I've built</h2>
+  <div class="header__addBtn">
+    <button mat-icon-button *ngIf="(afAuth.user | async)" (click)="openAddProject()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</div>
+<div class="inner">
+  <ul class="inner__proyects">
+    <li class="proyects__item" *ngFor="let project of projects">
+      <div class="item__container">
+        <div style="width: 100%">
+          <div class="container__header">
+            <div class="header__icon">
+              <mat-icon>folder_copy</mat-icon>
+            </div>
+            <div class="header__url">
+              <a href="{{project.github}}">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                  <title>GitHub</title>
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </a>
+              <a href="{{project.finalurl}}" *ngIf="project.haveurl">
+                <mat-icon class="icon-material">open_in_new</mat-icon>
+              </a>
+            </div>
+          </div>
+          <h3 class="container__title">
+            <a href="#" target="_blank">{{project.title}}</a>
+          </h3>
+          <div class="container__description">
+            <p>{{project.dtext}}</p>
+          </div>
+          <div class="container__btn" *ngIf="(afAuth.user | async)">
+            <button mat-icon-button (click)="openEditProject(project)">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button (click)="openDeleteProject(project.id)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

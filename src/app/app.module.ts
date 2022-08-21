@@ -20,6 +20,7 @@ import { ExpDialogComponent } from './components/experience/exp-dialog/exp-dialo
 import { EducationComponent } from './components/education/education.component';
 import { EduDialogComponent } from './components/education/edu-dialog/edu-dialog.component';
 import { ProjectComponent } from './components/project/project.component';
+import { ProDialogComponent } from './components/project/pro-dialog/pro-dialog.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ProjectComponent } from './components/project/project.component';
     ExpDialogComponent,
     EducationComponent,
     EduDialogComponent,
-    ProjectComponent
+    ProjectComponent,
+    ProDialogComponent
   ],
   imports: [
     BrowserModule,
