@@ -1,1 +1,40 @@
-<p>edu-dialog works!</p>
+<h1 mat-dialog-title>{{titleTxt}} education</h1>
+<div mat-dialog-content>
+  <form [formGroup]="eduForm">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Education type</mat-label>
+      <mat-select formControlName="type" disableRipple>
+        <mat-option value="Bootcamp">Bootcamp</mat-option>
+        <mat-option value="Secondary Degree">Secondary</mat-option>
+        <mat-option value="University Degree">University</mat-option>
+        <mat-option value="Bachelor">Bachelor</mat-option>
+        <mat-option value="Course">Course</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Title name</mat-label>
+      <input formControlName="title" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Institution</mat-label>
+      <input formControlName="institution" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Image url</mat-label>
+      <input formControlName="imgurl" matInput>
+    </mat-form-field>
+    <mat-checkbox formControlName="haveurl" color="primary">Have a url to view the certificate?</mat-checkbox>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Certificate url</mat-label>
+      <input formControlName="urlcertificate" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="dtext"></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+  <button style="margin-left: 8px" mat-raised-button color="accent" (click)="agregarEducation()">{{actionBtn}}</button>
+</div>
