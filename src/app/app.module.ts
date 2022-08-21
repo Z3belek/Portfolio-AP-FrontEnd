@@ -15,6 +15,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ConfirmComponent } from './components/confirm/confirm.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { AboutDialogComponent } from './components/aboutme/about-dialog/about-dialog.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { ExpDialogComponent } from './components/experience/exp-dialog/exp-dialog.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { AboutDialogComponent } from './components/aboutme/about-dialog/about-di
     HomeComponent,
     ConfirmComponent,
     AboutmeComponent,
-    AboutDialogComponent
+    AboutDialogComponent,
+    ExperienceComponent,
+    ExpDialogComponent
   ],
   imports: [
     BrowserModule,
