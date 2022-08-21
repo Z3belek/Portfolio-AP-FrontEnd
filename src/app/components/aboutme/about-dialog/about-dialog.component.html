@@ -1,1 +1,46 @@
-<p>about-dialog works!</p>
+<h1 mat-dialog-title>Edit About Me</h1>
+<div mat-dialog-content>
+  <form [formGroup]="aboutForm">
+    <mat-form-field appearance="outline" class="full-width">
+      <input formControlName="tpercentage1" matInput>
+      <mat-slider formControlName="percentage1"
+      thumbLabel
+      tickInterval="1000"
+      step="1"
+      min="0"
+      max="100"
+      aria-label="units" class="full-width"></mat-slider>
+      <mat-label>Skill 1</mat-label>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width">
+      <input formControlName="tpercentage2" matInput>
+      <mat-slider formControlName="percentage2"
+      thumbLabel
+      tickInterval="1000"
+      step="1"
+      min="0"
+      max="100"
+      aria-label="units" class="full-width"></mat-slider>
+      <mat-label>Skill 2</mat-label>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width">
+      <input formControlName="tpercentage3" matInput>
+      <mat-slider formControlName="percentage3"
+      thumbLabel
+      tickInterval="1000"
+      step="1"
+      min="0"
+      max="100"
+      aria-label="units" class="full-width"></mat-slider>
+      <mat-label>Skill 3</mat-label>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="dtext"></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+  <button style="margin-left: 8px" mat-raised-button color="accent" (click)="modificar()">Update</button>
+</div>

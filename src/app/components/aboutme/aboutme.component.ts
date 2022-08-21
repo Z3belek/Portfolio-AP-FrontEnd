@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { MatDialog } from '@angular/material/dialog';
-import { AboutmeService } from 'src/app/services/aboutme.service';
+import { Aboutme, AboutmeService } from 'src/app/services/aboutme.service';
 import { AboutDialogComponent } from './about-dialog/about-dialog.component';
 
 @Component({
@@ -10,7 +10,15 @@ import { AboutDialogComponent } from './about-dialog/about-dialog.component';
   styleUrls: ['./aboutme.component.scss']
 })
 export class AboutmeComponent implements OnInit {
-  aboutmes: any;
+  aboutmes: Aboutme = {
+    dtext: '',
+    percentage1: 0,
+    percentage2: 0,
+    percentage3: 0,
+    tpercentage1: '',
+    tpercentage2: '',
+    tpercentage3: '',
+  }
   constructor(
     private aboutmeService: AboutmeService,
     public dialog: MatDialog,
