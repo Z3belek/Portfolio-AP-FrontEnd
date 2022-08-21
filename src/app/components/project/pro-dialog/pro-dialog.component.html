@@ -1,1 +1,29 @@
-<p>pro-dialog works!</p>
+<h1 mat-dialog-title>{{titleTxt}} proyect</h1>
+<div mat-dialog-content>
+  <form [formGroup]="proForm">
+    <mat-form-field  appearance="outline" class="full-width">
+      <mat-label>Proyect name</mat-label>
+      <input formControlName="title" matInput>
+      <mat-icon matSuffix>badge</mat-icon>
+    </mat-form-field>
+    <mat-form-field  appearance="outline" class="full-width">
+      <mat-label>Proyect Github url</mat-label>
+      <input formControlName="github" matInput>
+      <mat-icon matSuffix>badge</mat-icon>
+    </mat-form-field>
+    <mat-checkbox formControlName="haveurl">Have a url to view the project?</mat-checkbox>
+    <mat-form-field  appearance="outline" class="full-width">
+      <mat-label>Proyect url</mat-label>
+      <input formControlName="finalurl"  matInput>
+      <mat-icon matSuffix>link</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Proyect description</mat-label>
+      <textarea  formControlName="dtext" matInput></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+  <button style="margin-left: 8px" mat-raised-button color="accent" (click)="agregarProject()">{{actionBtn}}</button>
+</div>
