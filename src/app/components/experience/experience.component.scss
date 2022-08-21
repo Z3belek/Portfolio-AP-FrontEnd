@@ -114,3 +114,20 @@
   left: 0;
   color: var(--c-orange-400)
 }
+
+@media (max-width:1000px) {
+  .inner__experience {
+    flex-direction: column;
+  }
+
+  .col1__technologies {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .experience__col2 {
+    padding: 10px 5px;
+    border-left: none;
+    border-top: 1px solid #233554;
+  }
+}

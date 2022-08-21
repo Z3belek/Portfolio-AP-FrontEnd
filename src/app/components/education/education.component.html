@@ -1,1 +1,32 @@
-<p>education works!</p>
+<div class="section__header">
+  <h2 class="header__title">Certificates I've got</h2>
+  <div class="header__addBtn">
+    <button mat-icon-button *ngIf="(afAuth.user | async)" (click)="openAddEdu()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</div>
+<div class="inner" *ngFor="let education of educations">
+  <div class="inner__btn" *ngIf="(afAuth.user | async)">
+    <button mat-icon-button (click)="openEditEdu(education)">
+      <mat-icon class="mini">edit</mat-icon>
+    </button>
+    <button mat-icon-button (click)="openDeleteEdu(education.id)">
+      <mat-icon class="mini">delete</mat-icon>
+    </button>
+  </div>
+  <div class="inner__experience">
+    <div class="experience__img">
+      <img alt="" src="{{education.imgurl}}">
+    </div>
+    <div class="experience__content">
+      <span>{{education.type}}</span>
+      <div class="content__title">{{education.title}}</div>
+      <div class="content__place">{{education.place}}</div>
+      <div class="content__resume">
+        <p>{{education.dtext}}</p>
+      </div>
+      <a mat-button href="{{education.urlcertificate}}" *ngIf="education.haveurl" class="content__btn">View certificate</a>
+    </div>
+  </div>
+</div>
