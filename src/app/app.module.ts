@@ -19,6 +19,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ExpDialogComponent } from './components/experience/exp-dialog/exp-dialog.component';
 import { EducationComponent } from './components/education/education.component';
 import { EduDialogComponent } from './components/education/edu-dialog/edu-dialog.component';
+import { ProjectComponent } from './components/project/project.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { EduDialogComponent } from './components/education/edu-dialog/edu-dialog
     ExperienceComponent,
     ExpDialogComponent,
     EducationComponent,
-    EduDialogComponent
+    EduDialogComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
