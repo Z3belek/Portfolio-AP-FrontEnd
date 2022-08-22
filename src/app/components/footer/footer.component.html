@@ -1,0 +1,14 @@
+<footer>
+  <div class="footer__inner">
+    <div class="inner__content">
+      <div class="content__menu">
+        <a mat-button href="{{data.href}}" *ngFor="let data of navData">
+          <span>{{data.label}}</span>
+        </a>
+      </div>
+      <div class="content__logo">
+        <img src="../../../assets/img/logo.svg" alt="Image" height="60">
+      </div>
+    </div>
+  </div>
+</footer>

@@ -16,3 +16,9 @@
     <app-project id="project"></app-project>
   </section>
 </div>
+<app-footer></app-footer>
+<div class="toTop" (click)="scrollToTop()" [ngClass]="{ 'show-scrollTop': windowScrolled }">
+  <button mat-fab color="accent" matTooltip="To the Top" matTooltipPosition="left">
+    <mat-icon>keyboard_arrow_up</mat-icon>
+  </button>
+</div>

@@ -5,11 +5,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { HttpClientModule } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 import { InfiniteTypeDeleteModule } from "ngx-sbz-type-delete";
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { environment } from 'src/environments/environment';
 import { LoginComponent } from './navbar/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { ConfirmComponent } from './components/confirm/confirm.component';
@@ -21,6 +21,7 @@ import { EducationComponent } from './components/education/education.component';
 import { EduDialogComponent } from './components/education/edu-dialog/edu-dialog.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ProDialogComponent } from './components/project/pro-dialog/pro-dialog.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ProDialogComponent } from './components/project/pro-dialog/pro-dialog.c
     EducationComponent,
     EduDialogComponent,
     ProjectComponent,
-    ProDialogComponent
+    ProDialogComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
