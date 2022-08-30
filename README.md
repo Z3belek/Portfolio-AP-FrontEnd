@@ -50,6 +50,3 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2022 [Sebastián Ibañez](https://github.com/Z3belek).<br />
 This project is [GPL--3.0 license](https://github.com/Z3belek/Portfolio-AP-FrontEnd/blob/main/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
