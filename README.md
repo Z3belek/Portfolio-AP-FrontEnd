@@ -1,27 +1,55 @@
-# PortfolioAPFrontEnd
+<h1 align="center">Welcome to Portfolio (Front-End) 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-v3.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/Z3belek/Portfolio-AP-FrontEnd/blob/main/LICENSE" target="_blank">
+    <img alt="License: GPL--3.0 license" src="https://img.shields.io/badge/License-GPL--3.0 license-yellow.svg" />
+  </a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+> Portfolio project made in Angular, with Material UI for Argentina Programa
 
-## Development server
+### 🏠 [Homepage](https://github.com/Z3belek/Portfolio-AP-FrontEnd)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### ✨ [Demo](https://portfolio-ap-4aab2.web.app/)
 
-## Code scaffolding
+## Install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```sh
+npm install
+```
 
-## Build
+## Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+ng serve --open
+```
 
-## Running unit tests
+## Run tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+ng test
+```
 
-## Running end-to-end tests
+## Author
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+👤 **Sebastián Ibañez**
 
-## Further help
+* Website: https://www.linkedin.com/in/sebastian-ibanez/
+* Github: [@Z3belek](https://github.com/Z3belek)
+* LinkedIn: [@sebastian-ibanez](https://linkedin.com/in/sebastian-ibanez)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Z3belek/Portfolio-AP-FrontEnd/issues). 
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2022 [Sebastián Ibañez](https://github.com/Z3belek).<br />
+This project is [GPL--3.0 license](https://github.com/Z3belek/Portfolio-AP-FrontEnd/blob/main/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
